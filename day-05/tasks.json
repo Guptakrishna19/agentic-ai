@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Learn AI",
+        "description": "basic AI fundamentals and frameworks",
+        "done": true
+    },
+    {
+        "title": "Comolete app task",
+        "description": "Configre the details updated by verifying and merging them into main",
+        "done": false
+    }
+]
