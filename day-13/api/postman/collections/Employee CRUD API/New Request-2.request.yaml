@@ -1,0 +1,16 @@
+$kind: http-request
+name: New Request
+url: http://127.0.0.1:8000/employees/11
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Pankaj Chaudhary\",\r
+
+    \    \"salary\": 85000,\r
+
+    \    \"department_id\": 4\r
+
+    }"
+order: 3000
