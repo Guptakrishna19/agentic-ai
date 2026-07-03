@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System | Admin Portal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Toast Notifications -->
+        <div id="toastContainer" class="toast-container"></div>
+
+        <!-- Sidebar / Header -->
+        <header class="app-header">
+            <div class="brand">
+                <div class="brand-text">
+                    <h1>Employee Management System</h1>
+                    <!-- <p>Employee Hub</p> -->
+                </div>
+            </div>
+            <div class="stats-card">
+                <div class="stat-item">
+                    <span class="stat-val" id="totalEmployeesCount">0</span>
+                    <span class="stat-label">Total Employees</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-val" id="avgSalaryCount">0</span>
+                    <span class="stat-label">Avg. Salary</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Form Card -->
+            <section class="card form-card">
+                <h2>Add New Employee</h2>
+                <form id="employeeForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="e.g. Dhruv Lukhi" required autocomplete="off">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" required>
+                                <option value="" disabled selected>Select Department</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Annual Salary (₹)</label>
+                            <input type="number" id="salary" placeholder="e.g. 75000" min="0" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Add Employee</span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Table Card -->
+            <section class="card table-card">
+                <div class="table-header">
+                    <h2>Employees Directory</h2>
+                    <div class="search-box">
+                        <input type="text" id="searchBar" placeholder="Search employees..." autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Salary</th>
+                                <th class="actions-col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employeeTable">
+                            <!-- Rows injected via JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="noDataMessage" class="no-data hidden">
+                    <div class="no-data-icon">📂</div>
+                    <p>No employees found. Add some to get started!</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Edit Employee Modal -->
+    <div id="editModal" class="modal-backdrop hidden">
+        <div class="modal card">
+            <div class="modal-header">
+                <h3>Edit Employee Details</h3>
+                <button type="button" class="btn-close" id="closeModalBtn">&times;</button>
+            </div>
+            <form id="editForm">
+                <input type="hidden" id="editEmployeeId">
+                <div class="form-group">
+                    <label for="editName">Full Name</label>
+                    <input type="text" id="editName" required autocomplete="off">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="editDepartment">Department</label>
+                        <select id="editDepartment" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="editSalary">Annual Salary (₹)</label>
+                        <input type="number" id="editSalary" min="0" required>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelModalBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js?v=1.1"></script>
+</body>
+</html>

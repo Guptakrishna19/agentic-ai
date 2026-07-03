@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: employee_management_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - db-data:/app/data
+    environment:
+      - DB_PATH=/app/data/intern.db
+    restart: always
+
+volumes:
+  db-data:
