@@ -1,0 +1,5 @@
+workspace:
+  id: bfd167fe-af2c-466a-819c-a338e8672496
+cloudResources:
+  collections:
+    ../postman/collections/Employee CRUD API: 56299560-13bc9606-60bb-4d4f-bd13-895c6bc3ed98
