@@ -56,9 +56,9 @@ Deploy locally using docker-compose (preview of Week 7)
 
 ## Completion Checklist
 
-- [ ] Completed all "Learn First" topics and wrote notes
-- [ ] Finished all task steps
-- [ ] Saved deliverable in this folder
-- [ ] Wrote 3 things I learned today in `reflection.md`
-- [ ] Wrote 1 doubt/blocker (if any) to ask mentor
+- [x] Completed all "Learn First" topics and wrote notes
+- [x] Finished all task steps
+- [x] Saved deliverable in this folder
+- [x] Wrote 3 things I learned today in `reflection.md`
+- [x] Wrote 1 doubt/blocker (if any) to ask mentor
 
