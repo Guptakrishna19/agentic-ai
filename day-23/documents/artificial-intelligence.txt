@@ -1,0 +1,9 @@
+Artificial Intelligence
+
+Artificial Intelligence, commonly known as AI, is a branch of computer science focused on creating systems that can perform tasks that normally require human intelligence. These tasks include understanding language, recognizing images, solving problems, making decisions, and learning from experience.
+
+AI systems are used in many areas of everyday life. Virtual assistants use AI to understand voice commands, recommendation systems suggest movies and products, and navigation applications use AI to find efficient routes.
+
+AI can be divided into different categories. Narrow AI is designed to perform specific tasks, while the concept of General AI refers to machines capable of performing a wide variety of intellectual tasks similar to humans.
+
+As AI continues to develop, important topics such as privacy, fairness, security, and responsible use must also be considered. The goal is to build AI systems that are useful, reliable, and safe for society.

@@ -1,0 +1,9 @@
+Machine Learning
+
+Machine Learning is a subset of Artificial Intelligence that allows computers to learn patterns from data without being explicitly programmed for every possible situation.
+
+There are three major types of machine learning: supervised learning, unsupervised learning, and reinforcement learning. In supervised learning, a model learns using labeled examples. In unsupervised learning, the model discovers hidden patterns in data. Reinforcement learning involves an agent learning through rewards and penalties.
+
+Machine learning is widely used in spam detection, fraud detection, recommendation systems, image recognition, medical analysis, and business forecasting.
+
+The quality of a machine learning system depends heavily on the quality of its training data. Data preprocessing, feature selection, model training, evaluation, and testing are important stages in building reliable machine learning applications.
