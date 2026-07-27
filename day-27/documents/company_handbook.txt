@@ -1,0 +1,103 @@
+TechNova Solutions Employee Handbook
+
+Company Overview
+TechNova Solutions is a software development company specializing in Artificial Intelligence, Machine Learning, Cloud Computing, and Web Development. The company was founded in 2021 and currently has over 250 employees working across multiple departments.
+
+Working Hours
+Standard office hours are Monday through Friday from 9:00 AM to 6:00 PM.
+Employees are expected to work 40 hours per week.
+Flexible working hours are allowed between 8:00 AM and 10:00 AM for start time, provided employees complete their required working hours.
+
+Remote Work Policy
+Employees may work remotely up to three days per week with manager approval.
+Full-time remote work is allowed only for approved roles.
+Employees must maintain a stable internet connection and attend all scheduled meetings.
+
+Leave Policy
+Every full-time employee receives:
+- 20 paid annual leave days.
+- 12 sick leave days.
+- 10 public holidays.
+Unused annual leave can be carried forward for up to 10 days into the next calendar year.
+
+Performance Reviews
+Performance evaluations are conducted twice each year.
+Employees are evaluated based on:
+- Technical skills
+- Communication
+- Team collaboration
+- Problem-solving ability
+- Project delivery
+
+Training and Development
+Every employee receives an annual learning budget of $1,500.
+Employees are encouraged to complete certifications in cloud computing, AI, cybersecurity, and software development.
+
+Laptop Policy
+Every employee receives a company-issued laptop.
+The laptop remains company property.
+Employees must return the laptop on their final working day.
+
+Expense Reimbursement
+Employees may claim reimbursement for:
+- Business travel
+- Hotel accommodation
+- Conference registration
+- Client meetings
+- Approved online courses
+
+Receipts must be submitted within 30 days.
+
+Code of Conduct
+Employees must:
+- Respect colleagues.
+- Maintain professionalism.
+- Protect confidential company information.
+- Follow all security policies.
+- Avoid workplace harassment.
+
+Information Security
+Passwords must contain at least 12 characters.
+Multi-factor authentication (MFA) is mandatory.
+Employees must never share passwords.
+Sensitive company data must not be stored on personal devices.
+
+IT Support
+IT support is available Monday through Friday from 8:00 AM to 8:00 PM.
+Employees can contact support through the internal helpdesk portal or by emailing support@technova.com.
+
+Project Management
+The engineering department follows Agile Scrum.
+Sprint duration is two weeks.
+Daily stand-up meetings begin at 10:00 AM.
+
+AI Development Guidelines
+Developers should use Retrieval-Augmented Generation (RAG) whenever applications require access to company documents.
+Embedding models convert text into numerical vectors that enable semantic search.
+ChromaDB is the standard vector database used internally.
+LangChain is used for building AI pipelines.
+LangGraph is used for orchestrating AI workflows involving multiple steps and decision-making.
+
+Customer Support
+Support tickets are categorized as:
+- Critical
+- High
+- Medium
+- Low
+
+Critical issues must receive an initial response within one hour.
+
+Cloud Infrastructure
+The company primarily uses Amazon Web Services (AWS).
+Applications are deployed using Docker containers.
+Continuous Integration and Continuous Deployment (CI/CD) pipelines are managed through GitHub Actions.
+
+Development Standards
+Python version 3.11 or newer should be used.
+All projects should follow PEP 8 coding standards.
+Unit tests must maintain at least 80% code coverage.
+
+Database Standards
+PostgreSQL is the primary production database.
+Redis is used for caching.
+ChromaDB stores vector embeddings for AI applications.
