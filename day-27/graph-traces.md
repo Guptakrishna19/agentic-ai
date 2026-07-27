@@ -371,3 +371,384 @@ SpaceX has revolutionized the space industry by reducing launch costs, increasin
 Overall, SpaceX continues to push the boundaries of space technology and exploration, with ambitious plans for the future of humanity in space.
 
 ---
+## Question
+
+what about money ?
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Could you please clarify what specific aspect of money you're interested in? There are many topics related to money, such as personal finance, investing, the economy, cryptocurrency, budgeting, and more. Let me know how I can assist you!
+
+---
+## Question
+
+what about leave
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+retrieve_docs
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Every full-time employee receives:
+- 20 paid annual leave days.
+- 12 sick leave days.
+- 10 public holidays.
+
+Unused annual leave can be carried forward for up to 10 days into the next calendar year.
+
+---
+## Question
+
+when is it
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Could you please provide more context or specify what you are asking about? Are you inquiring about a specific date, event, or time?
+
+---
+## Question
+
+Tell me about LangGraph.
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+retrieve_docs
+↓
+generate_answer
+↓
+END
+
+Answer
+
+LangGraph is used for orchestrating AI workflows involving multiple steps and decision-making.
+
+---
+## Question
+
+How does it work?
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Could you please provide more context or specify what you would like to know how it works? There are many topics and systems that could be addressed, such as technology, biology, economics, etc. Let me know so I can assist you better!
+
+---
+## Question
+
+what is langchin
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+"Langchin" does not appear to be a widely recognized term or concept in English or any specific field as of my last knowledge update in October 2023. It could potentially be a misspelling, a name, or a term from a specific culture, language, or niche area that is not broadly known.
+
+If you can provide more context or clarify what you mean by "langchin," I would be happy to help you further!
+
+---
+## Question
+
+what is langchain
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+retrieve_docs
+↓
+generate_answer
+↓
+END
+
+Answer
+
+LangChain is used for building AI pipelines. Its main features and applications involve creating structured workflows that facilitate the integration and execution of various AI tasks and processes.
+
+---
+## Question
+
+how can we use it in real world
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+The application of various technologies and concepts in the real world can be vast and varied. Here are some examples of how different technologies and ideas can be utilized in practical scenarios:
+
+1. **Artificial Intelligence (AI) and Machine Learning**:
+   - **Healthcare**: AI can analyze medical images, predict patient outcomes, and assist in diagnosis.
+   - **Finance**: Algorithms can detect fraudulent transactions and automate trading.
+   - **Customer Service**: Chatbots can provide 24/7 support, answering common queries and improving customer satisfaction.
+
+2. **Internet of Things (IoT)**:
+   - **Smart Homes**: Devices like smart thermostats and security cameras can be controlled remotely, enhancing convenience and security.
+   - **Industrial IoT**: Sensors on machinery can monitor performance and predict maintenance needs, reducing downtime.
+
+3. **Blockchain**:
+   - **Supply Chain Management**: Blockchain can provide transparency and traceability in the supply chain, ensuring product authenticity.
+   - **Finance**: Cryptocurrencies and smart contracts can streamline transactions and reduce costs.
+
+4. **Augmented Reality (AR) and Virtual Reality (VR)**:
+   - **Education**: AR can create interactive learning experiences, while VR can simulate real-world scenarios for training purposes.
+   - **Retail**: Customers can use AR to visualize products in their homes before purchasing.
+
+5. **Renewable Energy**:
+   - **Solar and Wind Power**: These technologies can be harnessed to reduce reliance on fossil fuels and lower carbon emissions.
+   - **Energy Storage**: Advances in battery technology can help store renewable energy for use during peak demand.
+
+6. **Data Analytics**:
+   - **Marketing**: Businesses can analyze consumer data to tailor their marketing strategies and improve customer engagement.
+   - **Sports**: Teams can use analytics to assess player performance and make strategic decisions.
+
+7. **Telemedicine**:
+   - **Remote Consultations**: Patients can consult with healthcare providers via video calls, improving access to care, especially in rural areas.
+   - **Wearable Health Tech**: Devices can monitor vital signs and send data to healthcare providers for real-time analysis.
+
+8. **3D Printing**:
+   - **Manufacturing**: Custom parts can be produced on-demand, reducing waste and inventory costs.
+   - **Healthcare**: Prosthetics and implants can be tailored to individual patients, improving outcomes.
+
+9. **Education Technology (EdTech)**:
+   - **Online Learning Platforms**: These can provide access to education for students worldwide, breaking geographical barriers.
+   - **Gamification**: Incorporating game elements into learning can enhance engagement and retention.
+
+10. **Sustainable Practices**:
+    - **Circular Economy**: Businesses can adopt practices that minimize waste and promote recycling and reuse of materials.
+    - **Green Building**: Incorporating sustainable materials and energy-efficient designs in construction can reduce environmental impact.
+
+By leveraging these technologies and concepts, individuals and organizations can solve real-world problems, improve efficiency, and create innovative solutions across various sectors.
+
+---
+## Question
+
+what did you understood from it
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Could you please clarify what specific topic or content you are referring to? This will help me provide a more accurate and relevant response.
+
+---
+## Question
+
+what is leave policy
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+retrieve_docs
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Every full-time employee receives:
+- 20 paid annual leave days.
+- 12 sick leave days.
+- 10 public holidays.
+Unused annual leave can be carried forward for up to 10 days into the next calendar year.
+
+---
+## Question
+
+is there any chance to increase it
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Could you please clarify what you would like to increase? Are you referring to a specific metric, such as productivity, income, knowledge, or something else? Providing more context will help me give you a more accurate response.
+
+---
+## Question
+
+what is langgraph
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+retrieve_docs
+↓
+generate_answer
+↓
+END
+
+Answer
+
+LangGraph is used for orchestrating AI workflows involving multiple steps and decision-making. Its main features include managing complex processes and facilitating the integration of various components in AI applications.
+
+---
+## Question
+
+where is this used in real world
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+LangGraph can be used in various real-world applications, including:
+
+1. **Natural Language Processing (NLP)**: It can orchestrate workflows for tasks like sentiment analysis, text summarization, and language translation by integrating different NLP models and tools.
+
+2. **Chatbots and Virtual Assistants**: LangGraph can manage the flow of conversation, handle user intents, and integrate various APIs to provide a seamless user experience.
+
+3. **Data Processing Pipelines**: In data science, LangGraph can be used to create workflows that involve data collection, cleaning, analysis, and visualization, allowing for efficient data handling.
+
+4. **Machine Learning Model Deployment**: It can help in managing the lifecycle of machine learning models, from training to deployment, including monitoring and updating models based on new data.
+
+5. **Business Process Automation**: Organizations can use LangGraph to automate complex business processes that require decision-making and integration of multiple systems, improving efficiency and reducing manual effort.
+
+6. **Research and Development**: In academic and industrial research, LangGraph can facilitate the orchestration of experiments, data collection, and analysis, streamlining the research process.
+
+These applications demonstrate LangGraph's versatility in managing complex workflows across different domains.
+
+---
+## Question
+
+what can you say about income policy
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+generate_answer
+↓
+END
+
+Answer
+
+Income policy refers to a set of measures and strategies implemented by governments or organizations to influence the distribution of income and wealth within an economy. It aims to achieve economic stability, reduce inequality, and promote social welfare. Here are some key aspects of income policy:
+
+1. **Wage Controls**: Governments may implement wage controls to manage inflation and ensure that wage growth aligns with productivity. This can involve setting minimum wage levels or negotiating wage agreements in certain sectors.
+
+2. **Taxation**: Progressive taxation is a common income policy tool, where higher income earners pay a larger percentage of their income in taxes. This can help redistribute wealth and fund public services.
+
+3. **Social Welfare Programs**: Income policies often include social safety nets, such as unemployment benefits, food assistance, and housing support, aimed at providing financial assistance to low-income individuals and families.
+
+4. **Subsidies and Grants**: Governments may provide subsidies or grants to specific sectors or groups to promote economic activity and support those in need, such as farmers, students, or small businesses.
+
+5. **Universal Basic Income (UBI)**: Some discussions around income policy include the concept of UBI, where all citizens receive a regular, unconditional sum of money from the government to ensure a basic standard of living.
+
+6. **Labor Market Policies**: These policies can include job training programs, employment services, and initiatives to promote fair labor practices, which can help improve income levels for workers.
+
+7. **Inflation Control**: Income policies may also focus on controlling inflation, as rising prices can erode purchasing power and disproportionately affect low-income households.
+
+Overall, income policy is a critical aspect of economic management, aiming to balance growth, equity, and social stability. Its effectiveness can vary based on the specific measures implemented and the economic context in which they are applied.
+
+---
+## Question
+
+what is budget of company projects
+
+Execution Path
+
+START
+↓
+classify_question
+↓
+retrieve_docs
+↓
+generate_answer
+↓
+END
+
+Answer
+
+The provided context does not specify a budget for the company's projects. It only mentions an annual learning budget of $1,500 for each employee and outlines various policies related to performance reviews, training and development, IT support, project management, laptop policy, expense reimbursement, and working hours. For information regarding project budgets, you may need to refer to additional company documentation or resources.
+
+---
