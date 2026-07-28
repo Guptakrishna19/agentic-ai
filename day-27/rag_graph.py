@@ -53,6 +53,7 @@ class GraphState(TypedDict):
     route: str
     documents: list
     answer: str
+    chat_history: list
 
 
 # ======================================================
@@ -92,6 +93,41 @@ def classify_question(state):
     print("\nRoute Selected : Direct LLM\n")
     return "chitchat"
 
+## rewrite question node
+
+def rewrite_question(state):
+
+    print("\nRewriting Question...\n")
+
+    chat_history = state.get("chat_history", [])
+    history_text = ""
+    if chat_history:
+        history_text = "\nChat History:\n" + "\n".join(
+            [f"{msg['role'].capitalize()}: {msg['content']}" for msg in chat_history]
+        ) + "\n"
+
+    prompt = f"""
+You are helping a RAG chatbot.
+
+Rewrite the user's question so it becomes clear, specific and self-contained.
+{history_text}
+Only rewrite the question.
+Do not answer it.
+
+Question:
+{state["question"]}
+"""
+
+    response = llm.invoke(prompt)
+
+    rewritten = response.content.strip()
+
+    print(f"Original : {state['question']}")
+    print(f"Rewritten: {rewritten}\n")
+
+    return {
+        "question": rewritten
+    }
 
 # ======================================================
 # Node 2
@@ -121,6 +157,13 @@ def retrieve_docs(state):
 
 def generate_answer(state):
 
+    chat_history = state.get("chat_history", [])
+    history_text = ""
+    if chat_history:
+        history_text = "\nChat History:\n" + "\n".join(
+            [f"{msg['role'].capitalize()}: {msg['content']}" for msg in chat_history]
+        ) + "\n"
+
     if state.get("documents"):
 
         context = "\n\n".join(
@@ -129,7 +172,7 @@ def generate_answer(state):
 
         prompt = f"""
 You are a helpful AI assistant.
-
+{history_text}
 Answer ONLY using the context below.
 
 Context:
@@ -141,12 +184,23 @@ Question:
 
     else:
 
-        prompt = state["question"]
+        prompt = f"""
+You are a helpful AI assistant.
+{history_text}
+Question:
+{state['question']}
+"""
 
     response = llm.invoke(prompt)
 
+    updated_history = chat_history + [
+        {"role": "user", "content": state["question"]},
+        {"role": "assistant", "content": response.content}
+    ]
+
     return {
-        "answer": response.content
+        "answer": response.content,
+        "chat_history": updated_history
     }
 
 
@@ -155,6 +209,11 @@ Question:
 # ======================================================
 
 graph = StateGraph(GraphState)
+
+graph.add_node(
+    "rewrite_question",
+    rewrite_question
+)
 
 graph.add_node(
     "retrieve_docs",
@@ -169,9 +228,14 @@ graph.add_node(
 graph.set_conditional_entry_point(
     classify_question,
     {
-        "factual": "retrieve_docs",
+        "factual": "rewrite_question",
         "chitchat": "generate_answer"
     }
+)
+
+graph.add_edge(
+    "rewrite_question",
+    "retrieve_docs"
 )
 
 graph.add_edge(
@@ -196,6 +260,8 @@ trace = open(
     encoding="utf-8"
 )
 
+chat_history = []
+
 print("Type 'exit' to quit.\n")
 
 while True:
@@ -209,11 +275,13 @@ while True:
 
     result = app.invoke(
         {
-            "question": question
+            "question": question,
+            "chat_history": chat_history
         }
     )
 
     answer = result["answer"]
+    chat_history = result.get("chat_history", chat_history)
 
     print("\nAssistant:\n")
     print(answer)

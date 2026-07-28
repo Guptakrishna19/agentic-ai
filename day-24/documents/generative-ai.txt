@@ -1,0 +1,9 @@
+Generative AI
+
+Generative AI refers to artificial intelligence systems that can create new content such as text, images, audio, video, and computer code.
+
+Large Language Models are an important example of generative AI. These models are trained on large amounts of text and learn patterns in language. They can answer questions, summarize documents, generate code, translate languages, and assist users with many knowledge-based tasks.
+
+Generative AI is being used in education, software development, marketing, healthcare, design, and customer support. It can improve productivity by helping people generate ideas and automate repetitive tasks.
+
+However, generative AI models can sometimes produce incorrect or misleading information. This is often called hallucination. Techniques such as Retrieval-Augmented Generation, or RAG, can provide external information to a language model so that its responses are based on relevant documents.
